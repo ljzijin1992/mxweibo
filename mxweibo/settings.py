@@ -61,7 +61,7 @@ WSGI_APPLICATION = 'mxweibo.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE':'django.db.backends.mysql',
-        'NAME': 'miniweibo',
+        'NAME': 'mxweibo',
 		'USER':'atom',
 		'PASSWORD':'atom',
         'HOST': '127.0.0.1',                      # Set to empty string for localhost. Not used with sqlite3.
@@ -89,7 +89,9 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS=[
+    '%s/static/'%BASE_DIR,
 	'./static/',
+    '../static/',
 ]
 
 TEMPLATE_DIRS = (

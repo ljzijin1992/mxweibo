@@ -1,12 +1,15 @@
 from django.conf.urls import patterns, include, url
 from django.contrib import admin
 from account import views as accountviews
+
 admin.autodiscover()
 
 urlpatterns = patterns('',
-    # Examples:
-    # url(r'^$', 'mxweibo.views.home', name='home'),
-    # url(r'^blog/', include('blog.urls')),
-    url(r'^admin/', include(admin.site.urls)),
-	url(r'^account/',include('account.urls')),
-)
+                       # Examples:
+                       url(r'^$', 'account.views.login'),
+                       url(r'^login/$', 'account.views.login'),
+                       url(r'^admin/', include(admin.site.urls)),
+                       url(r'^account/', include('account.urls')),
+                       url(r'^timeline/', include('timeline.urls')),
+                       url(r'^index/', 'account.views.index'),
+                       )

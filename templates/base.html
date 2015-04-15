@@ -3,6 +3,14 @@
 <head lang="zh-cn">
     <meta charset="UTF-8">
     <title>test page</title>
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+    <!-- 可选的Bootstrap主题文件（一般不用引入） -->
+    <link rel="stylesheet" href="/static/css/bootstrap-theme.min.css">
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="/static/js/jquery-1.11.2.min.js"></script>
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="/static/js/bootstrap.min.js"></script>
+
     <style type="text/css">
         body{
             margin: 0;
@@ -46,14 +54,16 @@
     </style>
 </head>
 <body>
-    <div id="container">
-        <div id="header">Header</div>
-        <div id="content_menu">Menu</div>
-        <div id="content_body">
-            {% block content %}{% endblock %}
-        </div>
-        <div id="content_info">info</div>
-        <div id="footer">Footer</div>
+    <div class="container-fluid" id="container">
+        <div class="page-header" id="header"></div>
+
+        <div class="panel-default" id="content_menu"> {% block content_menu %}{% endblock %}       </div>
+
+        <div class="panel-body" id="content_body">    {% block content %}{% endblock %}            </div>
+
+        <div class="panel-info" id="profile_info">    {% block profile_info %}{% endblock %}       </div>
+
+        <div class="panel-footer" id="footer">        {% block footer %}{% endblock %}             </div>
     </div>
 </body>
 </html>

@@ -2,28 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3a0ced6e-cdf6-49b5-85eb-29f1f3a7acc6" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/account/static/img/icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/account/static/img/login_bg.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/img/login_bg.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/comment/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/timeline/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/account/static/js/account.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/comment/admin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/timeline/admin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/account/static/css/login.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/account/templates/login.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/lrbase.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/comment/models.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/timeline/models.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/comment/tests.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/timeline/tests.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/comment/views.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/timeline/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/base.html" afterPath="$PROJECT_DIR$/templates/base.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/account/models.py" afterPath="$PROJECT_DIR$/account/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mxweibo/settings.py" afterPath="$PROJECT_DIR$/mxweibo/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/account/views.py" afterPath="$PROJECT_DIR$/account/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="mxweibo.iws" />
@@ -52,8 +30,8 @@
       <file leaf-file-name="login.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/account/static/css/login.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5496536" vertical-offset="0" max-vertical-offset="866">
-              <caret line="28" column="14" selection-start-line="28" selection-start-column="14" selection-end-line="28" selection-end-column="14" />
+            <state vertical-scroll-proportion="0.5692841" vertical-offset="0" max-vertical-offset="866">
+              <caret line="29" column="1" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -596,7 +574,13 @@
       <option name="project" value="LOCAL" />
       <updated>1429068736984</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add new">
+      <created>1429093361161</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1429093361161</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -642,7 +626,8 @@
       <TodoPanelSettings />
     </option>
     <MESSAGE value="fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix" />
+    <MESSAGE value="add new" />
+    <option name="LAST_COMMIT_MESSAGE" value="add new" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -779,8 +764,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/account/static/css/login.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5496536" vertical-offset="0" max-vertical-offset="866">
-          <caret line="28" column="14" selection-start-line="28" selection-start-column="14" selection-end-line="28" selection-end-column="14" />
+        <state vertical-scroll-proportion="0.5692841" vertical-offset="0" max-vertical-offset="866">
+          <caret line="29" column="1" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
           <folding />
         </state>
       </provider>

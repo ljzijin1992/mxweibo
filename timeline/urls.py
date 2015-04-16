@@ -6,5 +6,7 @@ admin.autodiscover()
 
 urlpatterns = patterns('',
                        # Examples:
+					   url(r'^$','timeline.views.list_timeline'),
                        url(r'send/', 'timeline.views.send'),
+					   url(r'likes/', 'timeline.views.likes'),
                        )

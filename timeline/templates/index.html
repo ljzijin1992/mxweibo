@@ -4,18 +4,28 @@
 {% block content %}
     <div class="panel panel-default" id="send_frame">
         <div>
+            <label class="sr-only" for="weibo_send_form">微博</label>
             <form id="weibo_send_form">
-                <label class="sr-only" for="weibo">微博</label>
                 <input type="text" id="sendweibo" class="form-control" aria-describedby="helpBlock" name="weibo_content"
                        value="">
                 <span id="helpBlock" class="help-block"><em>今天天气好，赶快来发条微博吧！</em></span>
-                <button type="button" class="btn btn-primary" id="send_weibo_btn">发送</button>
+                <button type="button" class="btn btn-primary" id="send_weibo_btn" onclick="sendWeibo();">发送</button>
             </form>
         </div>
     </div>
     <div class="panel panel-default" id="container_body">
         <ol>
-            {% if time_list %}
+            {% if timeline_list %}
+                {% for timeline in timeline_list %}
+                    <li><p>{{ timeline.owner_name }}</p>
+                        <p>{{ timeline.content }}</p>
+                        <p>{{ timeline.created_at }}</p>
+                        <div id='timeline_id' style="display: none">{{ timeline.id }}</div>#bug
+                        <p><span><a id="publish_comment">评论</a></span> | <span><a id="like" onclick="likes()">点赞</a></span><span>{{ timeline.likes }}</span></p>
+                        <hr>
+                    </li>
+                {% endfor %}
+
             {% else %}
                 <p style="text-align: center"><em>没有一条微博,赶快创建一个吧</em></p>
             {% endif %}
@@ -25,22 +35,5 @@
     </div>
 {% endblock %}
 {% block script %}
-    <script type="text/javascript">
-        $(document).ready(
-                $('#send_weibo_btn').click(function () {
-                    $.ajax({
-                        url: '/timeline/send/',
-                        type: 'get',
-                        data: $('#weibo_send_form').serialize(),
-                        success: function (repo) {
-                            location.reload();
-                        },
-                        error: function (error) {
-                            console.log($('#weibo_send_form').serialize());
-                        }
-
-                    });
-                });
-        )
-    </script>
+    <script src="/static/js/timeline.js"></script>
 {% endblock %}

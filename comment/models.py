@@ -4,6 +4,7 @@ from timeline.models import Timeline
 
 class Comment(models.Model):
 	timeline = models.ForeignKey(Timeline)
+	comment_user = models.CharField(max_length=32)
 	content = models.TextField()
 	created_at=models.DateTimeField(auto_now_add=True)
 
